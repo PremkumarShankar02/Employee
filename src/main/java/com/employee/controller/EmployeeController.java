@@ -24,7 +24,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empser;
 	
-	@PostMapping(value="/insert")
+	@PostMapping(value="/insertall")
 	public String addEmployee(@RequestBody EmployeeEntity e) throws SalaryException {
 		return empser.addEmployee(e);
 	}
